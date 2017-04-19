@@ -1,0 +1,18 @@
+---
+
+- file:
+    path: "{{mrpt_build_dir}}"
+    state: directory
+
+- name: source bashrc
+  sudo: no   
+  shell: . /home/nick/.bashrc && printenv
+
+#- name: Compile MRPT - CMake
+  #shell: cmake {{mrpt_loc_path}}
+  #args:
+    #chdir: "{{mrpt_build_dir}}"
+  #register: cmake_output
+
+
+#- debug: var=cmake_output.stdout_lines

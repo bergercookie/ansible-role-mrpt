@@ -1,0 +1,20 @@
+---
+
+## Default global variables for the role
+
+## Install dependencies and compile MRPT source manually
+# TODO
+use_src_repo: true
+## Following options assume that MRPT is to be installed from sources
+
+#github_user: MRPT
+#github_branch: master
+github_user: bergercookie
+github_branch: graphslam-devel2
+
+mrpt_remote_repo_gh: "http://github.com/{{github_user}}/mrpt"
+mrpt_git_branch: graphslam-devel2 # branch to track
+mrpt_loc_path: "~/mrpt"
+mrpt_build_path: "~/mrpt_build"
+
+

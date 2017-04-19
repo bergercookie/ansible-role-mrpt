@@ -1,0 +1,14 @@
+---
+
+# Packages to be installed prior to the MRPT compilation
+# http://www.mrpt.org/Building_and_Installing_Instructions#12_On_GNULinux
+- name: Install MRPT Prereqs for GNU/Linux
+  apt: name={{item}} state=present
+  with_items: "{{linux_reqs}}"
+  when: ansible_os_family == "Debian"
+
+# TODO - Add support for OSX
+- name: Install MRPT Prereqs for OSX
+  homebrew: name={{item}} state=present
+  with_items: "{{osx_reqs}}"
+  when: ansible_os_family == "Darwin"

@@ -1,0 +1,11 @@
+---
+- name: Clone MRPT locally
+  git:
+    clone: true
+    #repo: "{{mrpt_remote_repo_gh}}"
+    repo: ~/mrpt # TODO - remove this
+    dest: "{{mrpt_loc_path}}"
+    version: "{{mrpt_git_branch}}"
+  async: 1200
+  poll: 5
+

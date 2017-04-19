@@ -1,0 +1,8 @@
+---
+
+- include: install_prereqs.yml
+- include: clone_mrpt.yml
+- include: compile_mrpt.yml
+#- include: postprocess.yml
+
+

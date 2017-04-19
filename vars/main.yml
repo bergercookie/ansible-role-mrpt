@@ -1,0 +1,31 @@
+# Packages to be installed prior to the MRPT compilation
+# Package is automatically parsed by ansible
+
+# http://www.mrpt.org/Building_and_Installing_Instructions#12_On_GNULinux
+# Packages requirements for GNU/Linux platforms
+linux_reqs:
+  - build-essential
+  - pkg-config
+  - cmake
+  - libwxgtk3.0-dev
+  - libftdi-dev
+  - freeglut3-dev
+  - zlib1g-dev
+  - libusb-1.0-0-dev
+  - libudev-dev
+  - libfreenect-dev
+  - libdc1394-22-dev
+  - libavformat-dev
+  - libswscale-dev
+  - libassimp-dev
+  - libjpeg-dev
+  - libopencv-dev
+  - libgtest-dev
+  - libeigen3-dev
+  - libsuitesparse-dev
+  - libpcap-dev
+
+# TODO - Add support for OSX
+osx_reqs:
+  - kalimera
+  - kainuxta
